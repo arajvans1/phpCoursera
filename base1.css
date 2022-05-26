@@ -52,88 +52,101 @@ table {
 }
 
 .container {
-  margin: 0 auto;
-  padding-left: 30px;
+  padding-left: 10%;
+  padding-bottom: 20px;
   padding-right: 30px;
-  width: 960px;
+  width: 70%;
+  display:inline-block;
+}
+
+.container-side {
+  padding: 0 1em 1em 1em;
+  width: 28%;
+  display:inline-block;
+  vertical-align: top;
+  /*background-color: rgb(227, 229, 229);*/
+  margin-right: 1em;
 }
 
 
 body {
-  font-family: monospace;
-  font-size: large;
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 1.5;
+  color:rgb(103, 103, 103);
+  /*background-color:rgb(255, 241, 229);*/
+  background-color: white;
 }
 
-nav {
-    background-color: lightgray;
-    height : 3em;
-    font-family: arial, sans-serif;
+.navigation {
+  padding: 1em 1em 2em 2em;
+  background-color:lightgrey;
+  position:relative;
+
+}
+.topLeft {
+  position:absolute;
+  left:1em;
+  /*float:left;*/
 }
 
-nav ul { 
-    list-style-type: none;
-    padding-left: 0;
-    vertical-align: middle;
+.topRight {
+  position: absolute;
+  right:1em;
+  float:right;
 }
 
-nav li {
-  display: inline-block;
-  vertical-align: middle;
+.border {
+  padding: 0 1em 1em 1em;
+  border-radius: 10px;
+  background-color: rgb(233, 228, 223);
+  margin: 1em 1em 0 0;
 }
 
-nav li a {
-  color: darkblue;
-  text-decoration: none;
-}
+h1,h2, h3, h4, h5, p {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+    color: #648880;
+  }
 
-.back {
-    position: absolute;
-    left: 20px;
-}
-
-.forward {
-    position: absolute;
-    right: 20px;
-}
+  h1 {
+    font-weight: 700;
+    font-size: 24px;
+  }
 
 h2 {
-  color: red;
+  font-weight: 500;
+  font-size: 21px;
 }
 
 h3 {
-  color:orangered;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 h4 {
-  color:blue;
-  padding:2em;
+  font-weight: 500;
+  font-size: 19px;
 }
 
 span {
   color: red;
-  font-weight: bold;
 }
 
-.highlite {
-  background-color:antiquewhite;
-  font-weight: bold;
-  font-size: large;
-  padding: 0.5em;
-}
+
 table, th, td {
   border:1px solid black;
 }
 
-div {
-  width:80%;
-  background-color:antiquewhite;
-  font-weight: bold;
-  font-size: large;
+a {
+  text-decoration: none;
 }
 
-.wrap {
-  word-wrap: normal; 
-  padding: 5em;
-}
+
+
+
+
 
 
