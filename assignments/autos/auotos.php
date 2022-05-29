@@ -1,9 +1,10 @@
 <?php
+    require_once "pdo.php";
     session_start();
-    if (! isset($_SESSION["userID"])){
+    if (! isset($_SESSION["autosUserID"])){
         die("Please login");
     }
-    $userID = $_SESSION['userID'];
+    $userID = $_SESSION['autosUserID'];
     $choices = array('rock','paper','scissor');
     if (isset($_GET['play'])) {
         $humanChoice = $_GET['humanChoice'];

@@ -55,11 +55,17 @@
         </pre>
         <pre class="border">
         <h2> POSTGRES </h2>
-            - psgl is the command line client 
-            - psgl  (this command logs you in as root)
-            - psgl &ltdbname&gt &ltusername&gt (this command logs you in to &ltdbname&gt as &ltusername&gt)
+        <img alt="" class="cf kg kh" src="https://miro.medium.com/max/1400/1*IW4iIzJdAX0kAmUGmZApnQ.png" width="700" height="350" role="presentation">
+            - psql is the command line client 
+            - psql  (this command logs you in as root)
+            - psql &ltdbname&gt &ltusername&gt (this command logs you in to &ltdbname&gt as &ltusername&gt)
               ex - psql people pg4e;
             - \l -> list all databases
+            - sudo -u postgres psql
+            - create database mydb;
+            - create user myuser with encrypted password 'mypass';
+            - grant all privileges on database mydb to myuser;
+            - alter user username with encrypted password 'password';
             - \c dbname -> connects to dbname database
             - \dt -> shows all tables 
             - \d+ tablename -> describes the table schema
