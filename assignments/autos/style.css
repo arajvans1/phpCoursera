@@ -1,0 +1,27 @@
+.container {
+    width:50%;
+    position:absolute;
+    left:25%;
+}
+
+.label {
+    font-weight: bold;
+    font-size:.9em;
+    display:inline-block;
+    margin: .2em;
+}
+
+.button1 {
+    margin: .3em;
+    display:block;
+}
+.flash {
+    color: red;
+    font-family: monospace;
+    margin-bottom: .5em;
+    display: block;
+}
+
+table, th, td {
+    border:1px solid black;
+  }
