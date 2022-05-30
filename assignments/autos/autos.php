@@ -66,10 +66,11 @@
                 echo "</td> <td>";
                 echo $row['mileage'];
                 echo "</td> <td>";
-                echo '<form method = "post"> <input type = "hidden" ';
+                /*echo '<form method = "post"> <input type = "hidden" ';
                 echo 'name = "auto_id" value ="' . $row['auto_id'] . '">' . "\n" ;
                 echo '<input type = "submit" value = "Del" name = "delete">';
-                echo "\n</form>\n";
+                echo "\n</form>\n"; */
+                echo '<a href=delete.php?auto_id=' . $row['auto_id'] . '>' . "Delete" . '</a>';
                 echo '</td>';
                 echo "</tr>\n";
             }
